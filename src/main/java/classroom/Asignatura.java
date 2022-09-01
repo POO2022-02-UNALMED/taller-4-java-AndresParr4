@@ -2,7 +2,7 @@ package classroom;
 
 public class Asignatura {
 
-    String nombre;
+	String nombre;
     String n = nombre;
     int codigoInterno;
     int codigoExterno;
@@ -10,12 +10,12 @@ public class Asignatura {
 
     Asignatura() {
         this("Sin nombre",Tipo.FUNDAMENTACION);
-        this(0);
+       // this(0);
     }
 
-    Asignatura(int codigoInterno,Tipo tipo) {
-        this("Sin nombre", codigoInterno, 0,tipo);
-    }
+    //Asignatura(int codigoInterno,Tipo tipo) {
+      //  this("Sin nombre", codigoInterno, 0,tipo);
+    //}
 
     Asignatura(int codigoExterno,Tipo tipo) {
         this("Sin nombre", 0, codigoExterno,tipo);
@@ -39,9 +39,9 @@ public class Asignatura {
         this.tipo = tipo;
     }
 
-    void cambiarDatos(int codigoInterno) {
-        this.codigoInterno = codigoInterno;
-    }
+    //void cambiarDatos(int codigoInterno) {
+        //this.codigoInterno = codigoInterno;
+    //}
 
     void cambiarDatos(int codigoExterno) {
         this.codigoExterno = codigoExterno;
@@ -58,4 +58,5 @@ public class Asignatura {
     public void setCodigoInterno(double codigoInterno) {
         this.codigoInterno = (int) codigoInterno;
     }
+
 }
